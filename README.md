@@ -62,7 +62,7 @@ abra o arquivo indexAVoidNess.html em seu navegador
 
 ## 📡 Acessos e Contato
 
-- 🔗 [Site principal (via GitHub Pages)]([https://danxzsleepy.github.io/Project-AVN4r/](https://danxzsleepy.github.io/Project-AVN4r/HTML/AvoidNess-Creative_Hub.html))
+- 🔗 [Site principal (via GitHub Pages)](https://danxzsleepy.github.io/Project-AVN4r/HTML/AvoidNess-Creative_Hub.html)
 - 📺 [YouTube](#) (em breve)
 - 🐦 [X/Twitter](#) (em breve)
 - 📷 [Instagram](#) (em breve)
