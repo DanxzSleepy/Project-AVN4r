@@ -6,7 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AvoidNess</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>tailwind.config = { theme: { extend: { colors: { primary: '#8a2be2', secondary: '#4a0080' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8a2be2',  // Define a cor primária como um tom de roxo (#8a2be2)
+                        secondary: '#4a0080' // Define a cor secundária como um roxo mais escuro (#4a0080)
+                    },
+                    borderRadius: {
+                        'none': '0px',      // Bordas sem arredondamento
+                        'sm': '4px',        // Bordas levemente arredondadas (pequeno)
+                        DEFAULT: '8px',      // Arredondamento padrão (usado quando você usa apenas 'rounded')
+                        'md': '12px',       // Arredondamento médio
+                        'lg': '16px',       // Arredondamento grande
+                        'xl': '20px',       // Arredondamento extra grande
+                        '2xl': '24px',      // Arredondamento 2x extra grande
+                        '3xl': '32px',      // Arredondamento 3x extra grande
+                        'full': '9999px',   // Bordas completamente arredondadas (círculo)
+                        'button': '8px'     // Um arredondamento personalizado chamado 'button'
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -19,16 +42,31 @@
 
 </head>
 
+<!-- Corpo do documento com classe personalizada para a barra de rolagem -->
+
 <body class="custom-scrollbar">
+
+    <!-- Div do cursor personalizado - visível apenas em desktop (md:block) -->
     <div class="custom-cursor hidden md:block"></div>
-    <!-- Header Section (Light Zone) -->
+
+    <!-- Seção do cabeçalho principal (hero section) -->
     <header class="relative min-h-screen flex flex-col items-center justify-center bg-white overflow-hidden">
+
+        <!-- Container de partículas decorativas (absoluto para cobrir todo o header) -->
         <div id="particles-container" class="absolute inset-0 pointer-events-none"></div>
+
+        <!-- Barra de navegação fixa no topo -->
         <nav class="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-80 backdrop-blur-sm">
+
+            <!-- Container principal da navegação -->
             <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+                <!-- Container do logo -->
                 <div class="logo-text text-3xl font-bold text-gray-900">
+                    <!-- Texto do logo com efeito de gradiente -->
                     <span class="gradient-text">AvoidNess</span>
                 </div>
+
                 <div class="hidden md:flex space-x-8">
                     <a href="Akumaverse-Dimensão_Sombria.html" data-readdy="true"
                         class="nav-link text-gray-700 hover:text-primary">Akumaverse</a>
@@ -46,9 +84,10 @@
             </div>
             <div id="mobile-menu" class="hidden md:hidden w-full bg-white bg-opacity-95 backdrop-blur-sm">
                 <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-                    <a href="Akumaverse - Dimensão Sombria.html" data-readdy="true"
+                    <a href="Akumaverse-Dimensão_Sombria.html" data-readdy="true"
                         class="nav-link text-gray-700 hover:text-primary py-2">Akumaverse</a>
-                    <a href="#" class="nav-link text-gray-700 hover:text-primary py-2">LumenCore</a>
+                    <a href="LumenCore-Dimensão_do_Conhecimento.html"
+                        class="nav-link text-gray-700 hover:text-primary py-2">LumenCore</a>
                     <a href="NoctForge-Forja_de_Ideias.html" data-readdy="true"
                         class="nav-link text-gray-700 hover:text-primary py-2">NoctForge</a>
                     <a href="#about" class="nav-link text-gray-700 hover:text-primary py-2">Sobre Mim</a>
@@ -555,8 +594,8 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div class="card bg-gray-900 bg-opacity-60 backdrop-blur-md rounded-lg overflow-hidden fade-in">
                             <div class="relative h-48">
-                                <img src="images/complements/sectum.jpg"
-                                    alt="Game Screenshot" class="w-full h-full object-cover object-top">
+                                <img src="images/complements/sectum.jpg" alt="Game Screenshot"
+                                    class="w-full h-full object-cover object-top">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60">
                                 </div>
                                 <div class="absolute bottom-3 left-3">
@@ -577,8 +616,7 @@
                                     <span
                                         class="px-2 py-1 bg-gray-800 text-primary rounded-full text-xs">Platformer</span>
                                     <span class="px-2 py-1 bg-gray-800 text-primary rounded-full text-xs">Puzzle</span>
-                                    <span
-                                        class="px-2 py-1 bg-gray-800 text-primary rounded-full text-xs">Terror</span>
+                                    <span class="px-2 py-1 bg-gray-800 text-primary rounded-full text-xs">Terror</span>
                                     <span
                                         class="px-2 py-1 bg-gray-800 text-primary rounded-full text-xs">Atmosférico</span>
                                 </div>
@@ -591,8 +629,8 @@
                         <div class="card bg-gray-900 bg-opacity-60 backdrop-blur-md rounded-lg overflow-hidden fade-in"
                             data-delay="200">
                             <div class="relative h-48">
-                                <img src="images/complements/no_image.png"
-                                    alt="Game Screenshot" class="w-full h-full object-cover object-top">
+                                <img src="images/complements/no_image.png" alt="Game Screenshot"
+                                    class="w-full h-full object-cover object-top">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60">
                                 </div>
                                 <div class="absolute bottom-3 left-3">
@@ -841,9 +879,9 @@ Elara: "Retorne quando encontrar o que foi perdido."
                     <ul class="space-y-2">
                         <li><a href="Akumaverse-Dimensão_Sombria.html" data-readdy="true"
                                 class="text-gray-400 hover:text-primary transition-colors">Akumaverse</a></li>
-                        <li><a href="LumenCore-Dimensão_do_Conhecimento.html" class="text-gray-400 hover:text-primary transition-colors">LumenCore</a></li>
-                        <li><a href="NoctForge-Forja_de_Ideias.html"
-                                data-readdy="true"
+                        <li><a href="LumenCore-Dimensão_do_Conhecimento.html"
+                                class="text-gray-400 hover:text-primary transition-colors">LumenCore</a></li>
+                        <li><a href="NoctForge-Forja_de_Ideias.html" data-readdy="true"
                                 class="text-gray-400 hover:text-primary transition-colors">NoctForge</a></li>
                         <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">Sobre Mim</a>
                         </li>
