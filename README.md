@@ -1,7 +1,7 @@
 # 🌌 AvoidNess – Project AVN4r
 
 **"Explore. Crie. Desperte."**  
-Um universo digital pessoal criado para expressar ideias, paixões e projetos de forma simbólica e profunda.
+Um universo digital pessoal criado para expressar minhas ideias, paixões e projetos de forma simbólica e profunda da minha jornada nesse ramo que eu estou indo.
 
 ---
 
@@ -15,15 +15,28 @@ Ele serve como núcleo visual que conecta futuros **jogos, sistemas, estudos, ex
 ## 🧾 Estrutura de Pastas
 
 ```bash
-/HTML
-├── indexAVoidNess.html       # Página principal
-├── styleAVoidNess.css        # Estilo geral
-├── /assets/                  # Imagens, logos e fundos
-├── /akumaverse/              # Sessão anime/mangá
-├── /lumencore/               # Sessão ciência, conhecimento
-├── /noctforge/               # Sessão criações e sistemas
+/PROJECT-AVN4R
+├── HTML/                                           # Pasta principal com os arquivos do projeto
+│   ├── CSS/                                        # Estilos do site (cada .css corresponde a uma "sessão" ou tema)
+│   │   ├── Akumaverse.css                          # Estilo da seção AkumaVerse (anime/mangá)
+│   │   ├── AvoidNess.css                           # Estilo da seção AvoidNess (criatividade, design, etc.)
+│   │   ├── LumenCore.css                           # Estilo da seção LumenCore (ciência e conhecimento)
+│   │   └── NoctForge.css                           # Estilo da seção NoctForge (criações, sistemas e tecnologia)
+│   │
+│   ├── images/                                     # Pasta com todas as imagens do projeto
+│   │   ├── complements/                            # Imagens complementares (capas, thumbnails, fundos, etc.)
+│   │   └── logos/                                  # Logos de cada sessão do projeto
+│   │
+│   ├── Akumaverse-Dimensão_Sombria.html            # Página principal da sessão AkumaVerse
+│   ├── AvoidNess-Creative_Hub.html                 # Página principal da sessão AvoidNess
+│   ├── LumenCore-Dimensão_do_Conhecimento.html     # Página principal da sessão LumenCore
+│   └── NoctForge-Forja_de_Ideias.html              # Página principal da sessão NoctForge
+│
+├── .gitattributes                                  # Configurações do Git para versionamento
+├── documentation.txt                               # Arquivo de documentação do projeto
+├── LICENSE                                         # Licença do projeto
+└── README.md                                       # Documento de apresentação e instruções
 ```
-
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -32,7 +45,7 @@ Ele serve como núcleo visual que conecta futuros **jogos, sistemas, estudos, ex
 - **CSS3** + Tailwind CSS
 - JavaScript (animações, scroll interativo)
 - Design responsivo
-- Planejamento futuro com Django backend
+- Planejamento futuro com Django backend (ou outro framework sla)
 
 ---
 
@@ -56,7 +69,7 @@ abra o arquivo indexAVoidNess.html em seu navegador
 ---
 
 ## 🎥 Demonstração Visual (em breve)
-> Será adicionado um vídeo demonstrativo ou GIF de navegação.
+> Será adicionado um vídeo em breve (nao sei quando) demonstrativo ou GIF de navegação.
 
 ---
 
