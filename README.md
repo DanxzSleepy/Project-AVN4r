@@ -37,6 +37,7 @@ Ele serve como núcleo visual que conecta futuros **jogos, sistemas, estudos, ex
 ├── LICENSE                                         # Licença do projeto
 └── README.md                                       # Documento de apresentação e instruções
 ```
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -79,7 +80,7 @@ abra o arquivo indexAVoidNess.html em seu navegador
 - 📺 [YouTube](#) (em breve)
 - 🐦 [X/Twitter](#) (em breve)
 - 📷 [Instagram](#) (em breve)
-- ☁️ Discord (comunidade futura)
+- ☁️ Discord (comunidade futura talvez)
 
 ---
 
