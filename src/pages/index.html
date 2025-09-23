@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvoidNess - Danxz.Sleepy</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="AvoidNess - Portfolio pessoal de Danxz.Sleepy. Explore projetos de jogos indie, desenvolvimento web e criações digitais.">
+    <meta name="keywords" content="portfolio, jogos indie, desenvolvimento, programming, games, Danxz.Sleepy">
+    <meta name="author" content="Danxz.Sleepy">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AvoidNess - Danxz.Sleepy">
+    <meta property="og:description" content="Uma jornada da luz à escuridão, explorando os recantos sombrios da criatividade, conhecimento e imaginação.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://danxzsleepy.github.io/Project-AVN4r/">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8a2be2',
+                        secondary: '#4a0080'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../styles/AvoidNess.css">
+</head>
+
+<body class="custom-scrollbar">
+    <!-- Custom cursor -->
+    <div class="custom-cursor hidden md:block"></div>
+
+    <!-- Header -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center bg-white overflow-hidden">
+        <!-- Particles container -->
+        <div id="particles-container" class="absolute inset-0 pointer-events-none"></div>
+
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-80 backdrop-blur-sm">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="logo-text text-3xl font-bold text-gray-900">
+                    <span class="gradient-text">AvoidNess</span>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="Akumaverse-Dimensão_Sombria.html" class="nav-link text-gray-700 hover:text-primary">Akumaverse</a>
+                    <a href="LumenCore-Dimensão_do_Conhecimento.html" class="nav-link text-gray-700 hover:text-primary">LumenCore</a>
+                    <a href="NoctForge-Forja_de_Ideias.html" class="nav-link text-gray-700 hover:text-primary">NoctForge</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary">Sobre Mim</a>
+                </div>
+
+                <div class="md:hidden w-10 h-10 flex items-center justify-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+                        <i class="ri-menu-line ri-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden w-full bg-white bg-opacity-95 backdrop-blur-sm">
+                <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                    <a href="Akumaverse-Dimensão_Sombria.html" class="nav-link text-gray-700 hover:text-primary py-2">Akumaverse</a>
+                    <a href="LumenCore-Dimensão_do_Conhecimento.html" class="nav-link text-gray-700 hover:text-primary py-2">LumenCore</a>
+                    <a href="NoctForge-Forja_de_Ideias.html" class="nav-link text-gray-700 hover:text-primary py-2">NoctForge</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary py-2">Sobre Mim</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="container mx-auto px-6 py-24 text-center">
+            <h1 class="logo-text text-7xl md:text-9xl font-bold mb-6 parallax" data-speed="0.1">
+                <span class="gradient-text">AvoidNess</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 parallax" data-speed="0.2">
+                Uma jornada da luz à escuridão, explorando os recantos sombrios da criatividade, conhecimento e imaginação.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6 parallax" data-speed="0.3">
+                <a href="#hub" class="px-8 py-3 bg-primary text-white font-medium rounded-button hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
+                    Iniciar Jornada
+                </a>
+                <a href="#about" class="px-8 py-3 border-2 border-primary text-primary font-medium rounded-button hover:bg-primary hover:text-white transition-all duration-300 whitespace-nowrap">
+                    Sobre Mim
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#hub" class="w-10 h-10 flex items-center justify-center text-primary">
+                <i class="ri-arrow-down-line ri-2x"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Navigation Hub -->
+    <section id="hub" class="section-transition min-h-screen py-24 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">
+                <span class="gradient-text">Explore O Vazio</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Akumaverse Card -->
+                <div id="anime" class="card bg-white bg-opacity-90 backdrop-blur-md rounded-lg shadow-xl overflow-hidden fade-in">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="../assets/logos/AkumaVerse.png" alt="Akumaverse" class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white">Akumaverse</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Mergulhe no reino das sombras e cores vibrantes. Descubra os segredos sussurrados entre as páginas e os ecos de mundos que existem apenas nos sonhos.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Análises</span>
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Recomendações</span>
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Discussões</span>
+                        </div>
+                        <a href="Akumaverse-Dimensão_Sombria.html" class="inline-flex items-center text-primary hover:text-secondary transition-colors">
+                            Explorar <i class="ri-arrow-right-line ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LumenCore Card -->
+                <div id="education" class="card bg-white bg-opacity-90 backdrop-blur-md rounded-lg shadow-xl overflow-hidden fade-in" data-delay="200">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="../assets/logos/LumenCore.png" alt="LumenCore" class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white">LumenCore</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Expanda sua consciência através dos fragmentos de luz que iluminam o vazio. Conhecimento ancestral sobre os astros, as leis do universo e os códigos que tecem a realidade.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Astronomia</span>
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Física</span>
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Programação</span>
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Matemática</span>
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Filosofia</span>
+                        </div>
+                        <a href="LumenCore-Dimensão_do_Conhecimento.html" class="inline-flex items-center text-primary hover:text-secondary transition-colors">
+                            Aprender Mais <i class="ri-arrow-right-line ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NoctForge Card -->
+                <div id="creations" class="card bg-white bg-opacity-90 backdrop-blur-md rounded-lg shadow-xl overflow-hidden fade-in" data-delay="400">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="../assets/logos/NoctForge.png" alt="NoctForge" class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white">NoctForge</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Contemple as criações nascidas das sombras da minha mente. Jogos que ecoam o vazio, sistemas que desafiam a percepção e projetos que dançam entre luz e escuridão.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Jogos</span>
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Sistemas</span>
+                            <span class="px-3 py-1 bg-purple-100 text-primary rounded-full text-sm">Biografia</span>
+                        </div>
+                        <a href="NoctForge-Forja_de_Ideias.html" class="inline-flex items-center text-primary hover:text-secondary transition-colors">
+                            Ver Projetos <i class="ri-arrow-right-line ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark Content Sections -->
+    <section class="dark-section relative overflow-hidden">
+        <!-- Akumaverse Content -->
+        <div id="anime-content" class="min-h-screen py-24 relative">
+            <div class="absolute inset-0 pointer-events-none">
+                <div class="floating absolute top-20 left-20 w-24 h-24 bg-primary bg-opacity-10 rounded-full blur-xl"></div>
+                <div class="floating absolute bottom-40 right-40 w-32 h-32 bg-secondary bg-opacity-10 rounded-full blur-xl" style="animation-delay: 1s;"></div>
+                <div class="floating absolute top-1/2 right-1/4 w-16 h-16 bg-purple-300 bg-opacity-10 rounded-full blur-lg" style="animation-delay: 2s;"></div>
+            </div>
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-white fade-in">
+                    Akumaverse <span class="text-primary">Universo</span>
+                </h2>
+                <!-- Akumaverse content continues... -->
+            </div>
+        </div>
+
+        <!-- LumenCore Content -->
+        <div id="education-content" class="min-h-screen py-24 relative">
+            <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                <div class="orbit absolute top-1/4 left-1/4 w-4 h-4 bg-blue-400 rounded-full"></div>
+                <div class="orbit absolute top-1/4 left-1/4 w-6 h-6 bg-purple-400 rounded-full" style="animation-delay: 1s;"></div>
+                <div class="orbit absolute top-1/4 left-1/4 w-3 h-3 bg-pink-400 rounded-full" style="animation-delay: 2s;"></div>
+            </div>
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-white fade-in">
+                    LumenCore <span class="text-primary">Espaço</span>
+                </h2>
+                <!-- Subject Navigation -->
+                <div class="flex flex-col items-center mb-12 fade-in">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 p-1 bg-gray-800 bg-opacity-60 backdrop-blur-md rounded-full mb-6 w-full max-w-4xl">
+                        <button class="subject-btn px-6 py-2 rounded-full text-white bg-primary" data-subject="astronomy">
+                            <i class="ri-planet-line mr-2"></i>Astronomia
+                        </button>
+                        <button class="subject-btn px-6 py-2 rounded-full text-gray-300 hover:text-white" data-subject="physics">
+                            <i class="ri-atom-line mr-2"></i>Física
+                        </button>
+                        <button class="subject-btn px-6 py-2 rounded-full text-gray-300 hover:text-white" data-subject="programming">
+                            <i class="ri-code-line mr-2"></i>Programação
+                        </button>
+                        <button class="subject-btn px-6 py-2 rounded-full text-gray-300 hover:text-white" data-subject="mathematics">
+                            <i class="ri-functions-line mr-2"></i>Matemática
+                        </button>
+                        <button class="subject-btn px-6 py-2 rounded-full text-gray-300 hover:text-white" data-subject="philosophy">
+                            <i class="ri-mental-health-line mr-2"></i>Filosofia
+                        </button>
+                    </div>
+                    <p class="text-gray-400 text-center max-w-2xl">
+                        Embarque numa jornada através dos reinos do conhecimento. Cada assunto oferece uma perspectiva única para compreender nosso universo e nosso lugar dentro dele.
+                    </p>
+                </div>
+                <!-- LumenCore content continues... -->
+            </div>
+        </div>
+
+        <!-- NoctForge Content -->
+        <div id="creations-content" class="min-h-screen py-24 relative">
+            <div class="absolute inset-0 pointer-events-none">
+                <div class="floating absolute top-40 right-20 w-20 h-20 bg-primary bg-opacity-5 rounded-full blur-xl"></div>
+                <div class="floating absolute bottom-60 left-40 w-32 h-32 bg-purple-500 bg-opacity-5 rounded-full blur-xl" style="animation-delay: 1.5s;"></div>
+            </div>
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-white fade-in">
+                    NoctForge <span class="text-primary">Criações</span>
+                </h2>
+                <!-- NoctForge content continues... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-80 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+            <div class="floating absolute top-20 left-1/4 w-16 h-16 bg-primary bg-opacity-5 rounded-full blur-xl"></div>
+            <div class="floating absolute bottom-20 right-1/3 w-24 h-24 bg-purple-500 bg-opacity-5 rounded-full blur-xl" style="animation-delay: 1s;"></div>
+        </div>
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="logo-text text-2xl font-bold text-white mb-4">
+                        <span class="gradient-text">AvoidNess</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Uma jornada através da criatividade, conhecimento e imaginação.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/DanxzSleepy" class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary transition-colors">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://x.com/NullTheEmpty" class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/danzx_sleep/" class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-primary transition-colors">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Footer content continues... -->
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    &copy; 2025 AvoidNess. Todos os direitos reservados a Danxz.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors">Política de Privacidade</a>
+                    <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors">Termos de Serviço</a>
+                    <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    
+    <!-- Main Application Script -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
