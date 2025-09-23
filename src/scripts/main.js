@@ -14,6 +14,7 @@ class AvoidNessApp {
         this.initSubjectNavigation();
         this.initSmoothScroll();
         this.initGraphVisualization();
+        this.initPageNavigation();
     }
 
     // Particles System
@@ -285,6 +286,24 @@ class AvoidNessApp {
         };
 
         animate();
+    }
+
+    // Page Navigation Helper
+    initPageNavigation() {
+        // Add smooth transitions for page navigation
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('a[href$=".html"]');
+            if (link && !link.hasAttribute('target')) {
+                e.preventDefault();
+                
+                // Add loading effect
+                document.body.style.opacity = '0.8';
+                
+                setTimeout(() => {
+                    window.location.href = link.href;
+                }, 300);
+            }
+        });
     }
 }
 
