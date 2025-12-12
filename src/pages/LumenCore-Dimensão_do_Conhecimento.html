@@ -127,75 +127,77 @@
                                 <span class="ml-4 text-gray-400 text-sm">terminal@lumencore:~</span>
                             </div>
 
+                            <pre><code>
                             <div class="typing-animation mb-2">
-                                <span class="syntax-highlight">function</span> <span
+                                <span class="syntax-keyword">function</span> <span
                                     class="syntax-keyword">calcularSequenciaFibonacci</span>(<span
-                                    class="syntax-highlight">n</span>) {
+                                    class="syntax-highlight">n</span>) <span class="syntax-symbol">{</span>
                             </div>
                             <div class="typing-animation mb-2" style="animation-delay: 0.5s;">
                                 &nbsp;&nbsp;<span class="syntax-comment">// Retorna os primeiros n números da
                                     sequência</span>
                             </div>
                             <div class="typing-animation mb-2" style="animation-delay: 1s;">
-                                &nbsp;&nbsp;<span class="syntax-keyword">if</span> (n <= 0) <span
+                                &nbsp;&nbsp;<span class="syntax-keyword">if</span> (n &lt;= 0) <span
                                     class="syntax-keyword">return</span> [];
                             </div>
                             <div class="typing-animation mb-2" style="animation-delay: 1.5s;">
                                 &nbsp;&nbsp;<span class="syntax-keyword">if</span> (n === 1) <span
-                                    class="syntax-keyword">return</span> [0];
+                                    class="syntax-keyword">return</span> [<span class="syntax-number">0</span>];
                             </div>
                             <div class="typing-animation mb-2" style="animation-delay: 2s;">
                                 &nbsp;&nbsp;<span class="syntax-keyword">if</span> (n === 2) <span
-                                    class="syntax-keyword">return</span> [0, 1];
+                                    class="syntax-keyword">return</span> [<span class="syntax-number">0</span>, <span class="syntax-number">1</span>];
                             </div>
                             <div class="typing-animation mb-2" style="animation-delay: 2.5s;">
-                                &nbsp;&nbsp;<span class="syntax-keyword">const</span> sequencia = [0, 1];
+                                &nbsp;&nbsp;<span class="syntax-keyword">const</span> sequencia = [<span class="syntax-number">0</span>, <span class="syntax-number">1</span>];
                             </div>
                             <div class="typing-animation mb-2" style="animation-delay: 3s;">
                                 &nbsp;&nbsp;<span class="syntax-keyword">for</span> (<span
-                                    class="syntax-keyword">let</span> i = 2; i < n; i++) { </div>
-                                    <div class="typing-animation mb-2" style="animation-delay: 3.5s;">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;sequencia[i] = sequencia[i-1] + sequencia[i-2];
-                                    </div>
-                                    <div class="typing-animation mb-2" style="animation-delay: 4s;">
-                                        &nbsp;&nbsp;}
-                                    </div>
-                                    <div class="typing-animation mb-2" style="animation-delay: 4.5s;">
-                                        &nbsp;&nbsp;<span class="syntax-keyword">return</span> sequencia;
-                                    </div>
-                                    <div class="typing-animation mb-2" style="animation-delay: 5s;">
-                                        }
-                                    </div>
-                                    <div class="typing-animation mb-2" style="animation-delay: 5.5s;">
-                                        <span
-                                            class="syntax-highlight">console</span>.log(calcularSequenciaFibonacci(10));
-                                    </div>
-                                    <div class="typing-animation" style="animation-delay: 6s;">
-                                        <span class="syntax-string">[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]</span>
-                                    </div>
+                                    class="syntax-keyword">let</span> i = <span class="syntax-number">2</span>; i &lt; n; i++) <span class="syntax-symbol">{</span>
+                            </div>
+                            <div class="typing-animation mb-2" style="animation-delay: 3.5s;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;sequencia[i] = sequencia[i-<span class="syntax-number">1</span>] + sequencia[i-<span class="syntax-number">2</span>];
+                            </div>
+                            <div class="typing-animation mb-2" style="animation-delay: 4s;">
+                                &nbsp;&nbsp;<span class="syntax-symbol">}</span>
+                            </div>
+                            <div class="typing-animation mb-2" style="animation-delay: 4.5s;">
+                                &nbsp;&nbsp;<span class="syntax-keyword">return</span> sequencia;
+                            </div>
+                            <div class="typing-animation mb-2" style="animation-delay: 5s;">
+                                <span class="syntax-symbol">}</span>
+                            </div>
+                            <div class="typing-animation mb-2" style="animation-delay: 5.5s;">
+                                <span
+                                    class="syntax-highlight">console</span>.log(calcularSequenciaFibonacci(<span class="syntax-number">10</span>));
+                            </div>
+                            <div class="typing-animation" style="animation-delay: 6s;">
+                                <span class="syntax-string">[<span class="syntax-number">0</span>, <span class="syntax-number">1</span>, <span class="syntax-number">1</span>, <span class="syntax-number">2</span>, <span class="syntax-number">3</span>, <span class="syntax-number">5</span>, <span class="syntax-number">8</span>, <span class="syntax-number">13</span>, <span class="syntax-number">21</span>, <span class="syntax-number">34</span>]</span>
+                            </div>
+                            </code></pre>
+                        </div>
+
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4">A Linguagem do Cosmos</h3>
+                                <p class="text-gray-300 mb-6">A programação é a linguagem que nos permite traduzir
+                                    pensamentos abstratos em instruções concretas. Através dela, criamos simulações
+                                    do universo, modelamos fenômenos complexos e expandimos os limites do
+                                    conhecimento humano.</p>
+                                <p class="text-gray-300 mb-6">Desde os algoritmos que processam imagens de
+                                    telescópios espaciais até os sistemas que analisam dados de aceleradores de
+                                    partículas, o código é a ferramenta que nos permite decifrar os segredos mais
+                                    profundos da realidade.</p>
                             </div>
 
-                            <div class="flex flex-col justify-between">
-                                <div>
-                                    <h3 class="text-2xl font-bold mb-4">A Linguagem do Cosmos</h3>
-                                    <p class="text-gray-300 mb-6">A programação é a linguagem que nos permite traduzir
-                                        pensamentos abstratos em instruções concretas. Através dela, criamos simulações
-                                        do universo, modelamos fenômenos complexos e expandimos os limites do
-                                        conhecimento humano.</p>
-                                    <p class="text-gray-300 mb-6">Desde os algoritmos que processam imagens de
-                                        telescópios espaciais até os sistemas que analisam dados de aceleradores de
-                                        partículas, o código é a ferramenta que nos permite decifrar os segredos mais
-                                        profundos da realidade.</p>
-                                </div>
-
-                                <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border-l-4 border-primary">
-                                    <h4 class="text-lg font-semibold mb-2">Você sabia?</h4>
-                                    <p class="text-gray-300">A sequência de Fibonacci, além de sua beleza matemática,
-                                        aparece com frequência surpreendente na natureza - desde a disposição de
-                                        sementes em girassóis até a estrutura de galáxias espirais. Esta sequência segue
-                                        a "proporção áurea" (aproximadamente 1,618), considerada por muitos como a
-                                        proporção mais esteticamente agradável ao olho humano.</p>
-                                </div>
+                            <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border-l-4 border-primary">
+                                <h4 class="text-lg font-semibold mb-2">Você sabia?</h4>
+                                <p class="text-gray-300">A sequência de Fibonacci, além de sua beleza matemática,
+                                    aparece com frequência surpreendente na natureza - desde a disposição de
+                                    sementes em girassóis até a estrutura de galáxias espirais. Esta sequência segue
+                                    a "proporção áurea" (aproximadamente 1,618), considerada por muitos como a
+                                    proporção mais esteticamente agradável ao olho humano.</p>
                             </div>
                         </div>
                     </div>
