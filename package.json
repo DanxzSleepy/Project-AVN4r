@@ -2,16 +2,25 @@
   "name": "avoidness-portfolio",
   "version": "2.0.0",
   "description": "AvoidNess - Portfolio pessoal de Danxz.Sleepy",
-  "main": "src/pages/index.html",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "node server.js"
   },
-  "keywords": ["portfolio", "games", "indie", "developer"],
+  "keywords": [
+    "portfolio",
+    "games",
+    "indie",
+    "developer"
+  ],
   "author": "Danxz.Sleepy",
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.1"
+  },
   "devDependencies": {
     "vite": "^5.0.0"
   }
